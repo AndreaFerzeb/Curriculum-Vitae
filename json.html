@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body><h2>Create a JSON string from a JavaScript object.</h2>
+    
+    <p id="demo">
+
+    </p>
+    
+    <script>
+        const persona = '{"nombre":"Andrea", "edad":62, "nacionalidad": "Argentina"}';
+        const obj = JSON.parse(persona);
+         console. log(obj);
+        document.getElementById("demo").innerHTML =
+         "Nombre: "+obj.nombre+"|Edad:"+obj.edad+
+         "|Nacionalidad: "+obj.nacionalidad;
+        </script>
+
+ 
+</body>
+</html>
